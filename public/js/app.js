@@ -2515,6 +2515,14 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     forceTLS: true
 // });
+//
+// import Echo from "laravel-echo"
+// window.io= require('socket.io-client');
+//
+// window.Echo = new Echo({
+//     broadcaster:'socket.io',
+//     host: process.env.MIX_APP_URL+':6001'
+// });
 
 /***/ }),
 

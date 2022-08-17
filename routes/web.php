@@ -20,3 +20,8 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/event', function () {
+    event(new \App\Events\UserEvent());
+    dd('Event Run Successfully.');
+});
